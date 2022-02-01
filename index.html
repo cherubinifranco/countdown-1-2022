@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="completepage">
+        <div class="circle">
+            <div class="paso1 container" id="paso1">
+                <div>
+                    <p class="name">Source Code</p>
+                    <img class="social" src="icons/github.png" alt="">
+                    <img class="social" src="icons/linkedIn.png" alt="">
+                </div>
+                <h1 class="title">Simple timer</h1>
+                <button class="btn" onclick="pag(2)">START</button>
+                <p></p>
+            </div>
+
+
+            <div class="paso2 container" id="paso2">
+                <div class="time">
+                    <input type="text" maxlength="2">
+                    <input type="text" maxlength="2">
+                    <input type="text" maxlength="2">
+                </div>
+                <li><img src="icons/play-circle.png" onclick="pag(3)"></li>
+            </div>
+
+
+
+
+
+            <div class="paso3 container" id="paso3">
+                <div class="text-container">
+                    <p type="number" id="totalTime">3</p>
+                    <p id="currentTime"></p>
+                    <p id="remainingTime">1</p>
+                </div>
+                <div class="multimedia-container">
+                    <li><img src="icons/loop.png" id="restart" onclick="restart()"></li>
+                    <li><img src="icons/play-circle.png" id="playPause" onclick="play()"></li>
+                    <li><img src="icons/trash.png" id="trash" onclick="trash()"></li>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="script.js"></script>
+</footer>
+</html>
