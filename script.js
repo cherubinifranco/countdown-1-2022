@@ -58,9 +58,9 @@ function restart(){
     console.timeEnd();
     console.clear();
 }
-function trash(){
 
-}
+// This makes the countdown work ones the time is given
+
 function clock(){
     var update = setInterval(function(){
         if (running){
