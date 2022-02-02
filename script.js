@@ -3,24 +3,25 @@ const rt = document.getElementById("remainingTime");
 const ct = document.getElementById("currentTime");
 const playPause = document.getElementById("playPause");
 const restartBtn = document.getElementById("restart");
-const paso1 = document.getElementById("paso1");
-const paso2 = document.getElementById("paso2");
-const paso3 = document.getElementById("paso3");
+
 var running = false;
 
 // This part selects the page
 
-pag(1);
+pag(2);
 function pag(n){
-    paso1.style.display = "none";
-    paso2.style.display = "none";
-    paso3.style.display = "none";
+    let page1 = document.getElementById("page1");
+    let page2 = document.getElementById("page2");
+    let page3 = document.getElementById("page3");
+    page1.style.display = "none";
+    page2.style.display = "none";
+    page3.style.display = "none";
     if (n == 1){
-        paso1.style.display = "flex";
+        page1.style.display = "flex";
     } else if (n == 2) {
-        paso2.style.display = "flex";
+        page2.style.display = "flex";
     } else {
-        paso3.style.display = "flex";
+        page3.style.display = "flex";
     }
 }
 

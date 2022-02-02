@@ -8,44 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="completepage">
-        <div class="circle">
-            <div class="paso1 container" id="paso1">
-                <div>
-                    <p class="name">Source Code</p>
-                    <img class="social" src="icons/github.png" alt="">
-                    <img class="social" src="icons/linkedIn.png" alt="">
-                </div>
-                <h1 class="title">Simple timer</h1>
-                <button class="btn" onclick="pag(2)">START</button>
-                <p></p>
+            <!-- The circle is the base for the content -->
+    <div class="circle"> 
+
+            <!-- This is the landing page -->
+
+        <div class="container" id="page1">
+            <div>
+                <p class="name">Source Code</p>
+                <a href="https://github.com/cherubinifranco/countdown-1-2022" target="_black"><img class="social" src="icons/github.png"   alt=""></a>
+                <a href="https://www.linkedin.com/in/cherubinifranco/"        target="_black"><img class="social" src="icons/linkedIn.png" alt=""></a>
             </div>
+            <h1 class="title">Simple timer</h1>
+            <button class="btn" onclick="pag(2)">START</button>
+            <p></p>
+        </div>
 
 
-            <div class="paso2 container" id="paso2">
-                <div class="time">
-                    <input type="text" maxlength="2">
-                    <input type="text" maxlength="2">
-                    <input type="text" maxlength="2">
-                </div>
-                <li><img src="icons/play-circle.png" onclick="pag(3)"></li>
+        <!-- In this page you select the amount of time for the clock -->
+
+        <div class="container" id="page2">
+            <input type="time" id="timeSelector" class="timeSelector">
+            <div><li><img src="icons/play-circle.png" onclick="pag(3)"></li></div>
+        </div>
+
+
+
+        <!-- This page is to show the countdown and to alert when the time is up -->
+
+        <div class="container" id="page3">
+            <div class="text-container">
+                <p type="number" id="totalTime">3</p>
+                <p id="currentTime"></p>
+                <p id="remainingTime">1</p>
             </div>
-
-
-
-
-
-            <div class="paso3 container" id="paso3">
-                <div class="text-container">
-                    <p type="number" id="totalTime">3</p>
-                    <p id="currentTime"></p>
-                    <p id="remainingTime">1</p>
-                </div>
-                <div class="multimedia-container">
-                    <li><img src="icons/loop.png" id="restart" onclick="restart()"></li>
-                    <li><img src="icons/play-circle.png" id="playPause" onclick="play()"></li>
-                    <li><img src="icons/trash.png" id="trash" onclick="trash()"></li>
-                </div>
+            <div class="multimedia-container">
+                <li><img src="icons/loop.png" id="restart" onclick="restart()"></li>
+                <li><img src="icons/play-circle.png" id="playPause" onclick="play()"></li>
+                <li><img src="icons/trash.png" id="trash" onclick="trash()"></li>
             </div>
         </div>
     </div>
