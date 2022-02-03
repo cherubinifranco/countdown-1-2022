@@ -82,7 +82,7 @@ function clock(){
 function display(){
     minutes = Math.floor(timeCount / 60);
     seconds = timeCount - (minutes * 60);
-    remainingTime.innerHTML = minutes + " : " + seconds;
+    remainingTime.innerHTML = minutes + ":" + seconds;
 }
 
 

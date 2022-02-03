@@ -33,6 +33,8 @@ li img {
     height: 77px;
 }
 
+input[type="time"]::-webkit-calendar-picker-indicator { background: none; display:none; }
+
 
   /*                                     */
  /*              Containers             */
@@ -69,15 +71,6 @@ li img {
     background-color: var(--secondarydark);
 }
 
-.btn-page2{
-    height: 77px;
-    width: 77px;
-    background: url("icons/play-circle.png");
-    border: none;
-}
-
-
-
 
 
   /*                                     */
@@ -109,8 +102,9 @@ li img {
     justify-content: space-around;
 }
 
+
 #remainingTime{
-    color: #06121B;
+    color: var(--primarydark);
     font-size: 7em;
     line-height: 1em;
 }
@@ -153,7 +147,6 @@ li img {
     animation-iteration-count: 1;
     animation-direction: alternate-reverse;
 }
-
 
 @keyframes rotate {
     from {transform: rotate(180deg);}
