@@ -9,7 +9,7 @@
 </head>
 <body>
             <!-- The circle is the base for the content -->
-    <div class="circle"> 
+    <div class="circle" id="circle"> 
 
             <!-- This is the landing page -->
 
@@ -28,8 +28,9 @@
         <!-- In this page you select the amount of time for the clock -->
 
         <div class="container" id="page2">
-            <input type="time" id="timeSelector" class="timeSelector">
-            <div><li><img src="icons/play-circle.png" onclick="pag(3)"></li></div>
+            <p></p>
+            <input type="time" id="timeSelector" class="timeSelector" value="00:00">
+            <button type="submit" onclick="pag(3), clock()" class="btn-page2"></button>
         </div>
 
 
@@ -37,10 +38,9 @@
         <!-- This page is to show the countdown and to alert when the time is up -->
 
         <div class="container" id="page3">
+            <p></p>
             <div class="text-container">
-                <p type="number" id="totalTime">3</p>
-                <p id="currentTime"></p>
-                <p id="remainingTime">1</p>
+                <p id="remainingTime">Casi br</p>
             </div>
             <div class="multimedia-container">
                 <li><img src="icons/loop.png" id="restart" onclick="restart()"></li>

@@ -6,6 +6,7 @@
     --primarydark: #000913;
     --secondarydark: #06121B;
     --accent:#D0A85C;
+    --primarygray: #C4C4C4;
 }
 *{
     margin: 0;
@@ -68,7 +69,12 @@ li img {
     background-color: var(--secondarydark);
 }
 
-
+.btn-page2{
+    height: 77px;
+    width: 77px;
+    background: url("icons/play-circle.png");
+    border: none;
+}
 
 
 
@@ -92,7 +98,7 @@ li img {
 /* Page2 */
 .timeSelector {
     border: none;
-    background-color: var(--accent);
+    background-color: var(--primarygray);
     font-size: 3em;
 }
 
