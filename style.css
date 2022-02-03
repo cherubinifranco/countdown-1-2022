@@ -99,7 +99,7 @@ li img {
 .timeSelector {
     border: none;
     background-color: var(--primarygray);
-    font-size: 3em;
+    font-size: 7em;
 }
 
 /* Page3 */
@@ -107,17 +107,6 @@ li img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-#totalTime{
-    margin-top: 10px;
-    font-size: 4em;
-    color: #767676;
-
-}
-#currentTime{
-    font-size: 1.5em;
-    color: #767676;
 }
 
 #remainingTime{
@@ -164,19 +153,7 @@ li img {
     animation-iteration-count: 1;
     animation-direction: alternate-reverse;
 }
-.min-max{
-    animation-name: rotate;
-    animation-duration: 0.2s;
-    animation-iteration-count: 1;
-    animation-direction: alternate-reverse;
-}
 
-
-
-@keyframes min-max {
-    from {height: 77px; padding: 0;}
-    to {height: 20px; padding: 20px 37px 0 20px;}
-}
 
 @keyframes rotate {
     from {transform: rotate(180deg);}
