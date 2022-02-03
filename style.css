@@ -6,8 +6,9 @@
     --primarydark: #000913;
     --secondarydark: #06121B;
     --accent:#D0A85C;
+    --primarygray: #C4C4C4;
 }
-  *{
+*{
     margin: 0;
     text-align: center;
     text-decoration: none;
@@ -15,7 +16,13 @@
 }
 body{
     background-color: #000913;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+/* This is for the buttons that are images */
 li {
     list-style-type: none;
     margin: auto;
@@ -30,12 +37,6 @@ li img {
   /*                                     */
  /*              Containers             */
 /*                                     */
-.completepage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 .circle {
     background: var(--accent);
     border-radius: 50%;
@@ -47,12 +48,8 @@ li img {
     flex-direction: column;
     height: 100%;
     align-items: center;
-}
-.paso1 {
     justify-content: space-evenly;
 }
-
-
 
 
   /*                                     */
@@ -72,7 +69,12 @@ li img {
     background-color: var(--secondarydark);
 }
 
-
+.btn-page2{
+    height: 77px;
+    width: 77px;
+    background: url("icons/play-circle.png");
+    border: none;
+}
 
 
 
@@ -81,6 +83,8 @@ li img {
   /*                                     */
  /*                 Text                */
 /*                                     */
+
+/* Page1 */
 .title{
     font-size: 3.5rem;
     color: var(--primarydark)
@@ -91,10 +95,14 @@ li img {
     color: var(--secondarydark)
 }
 
+/* Page2 */
+.timeSelector {
+    border: none;
+    background-color: var(--primarygray);
+    font-size: 3em;
+}
 
-
-
-
+/* Page3 */
 .text-container {
     display: flex;
     flex-direction: column;
