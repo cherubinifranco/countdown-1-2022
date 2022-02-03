@@ -30,7 +30,7 @@
         <div class="container" id="page2">
             <p></p>
             <input type="time" id="timeSelector" class="timeSelector" value="00:00">
-            <button type="submit" onclick="pag(3), clock()" class="btn-page2"></button>
+            <div class="multimedia-container"><li><img src="icons/play-circle.png" onclick="pag(3), clock(), play()"></li></div>
         </div>
 
 
@@ -45,6 +45,7 @@
             <div class="multimedia-container">
                 <li><img src="icons/loop.png" id="restart" onclick="restart()"></li>
                 <li><img src="icons/play-circle.png" id="playPause" onclick="play()"></li>
+                <li><img src="icons/delete.png" id="delete" onclick="pag(2), restart()"></li>
             </div>
         </div>
     </div>
