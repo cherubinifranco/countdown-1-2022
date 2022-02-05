@@ -82,7 +82,7 @@ function restart(){
     playPause.style.display = "block";
     circle.classList.remove("ringring");
     audio.pause();
-    ConstantSourceNode.currentTime = 0;
+    audio.currentTime = 0;
 }
 
 // This makes the countdown work ones the time is given
