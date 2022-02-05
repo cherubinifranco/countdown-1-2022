@@ -15,7 +15,7 @@
 
         <div class="container" id="page1">
             <div>
-                <p class="name">Source Code</p>
+                <p class="name">Links</p>
                 <a href="https://github.com/cherubinifranco/countdown-1-2022" target="_black"><img class="social" src="icons/github.png"   alt=""></a>
                 <a href="https://www.linkedin.com/in/cherubinifranco/"        target="_black"><img class="social" src="icons/linkedIn.png" alt=""></a>
             </div>
@@ -28,9 +28,9 @@
         <!-- In this page you select the amount of time for the clock -->
 
         <div class="container" id="page2">
-            <p></p>
+            <h1 class="subtitle">Select the time</h1>
             <input type="time" id="timeSelector" class="timeSelector" value="00:00">
-            <div class="multimedia-container"><li><img src="icons/play-circle.png" onclick="pag(3), clock(), play()"></li></div>
+            <div class="multimedia-container"><li><img src="icons/play-circle.png" onclick="pag(3), clock(), check()"></li></div>
         </div>
 
 
@@ -38,7 +38,7 @@
         <!-- This page is to show the countdown and to alert when the time is up -->
 
         <div class="container" id="page3">
-            <p></p>
+           <h1 class="subtitle"><a onclick="pag(1), restart()">Back to START</a></h1>
             <div class="text-container">
                 <p id="remainingTime"></p>
             </div>

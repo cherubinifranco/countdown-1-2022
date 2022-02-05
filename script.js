@@ -9,8 +9,10 @@ let minutes;
 let seconds;
 
 var running = false;
+var audio = new Audio('sound.mp3');
 
 // This part selects the page
+
 
 pag(1);
 function pag(n){
@@ -24,16 +26,21 @@ function pag(n){
 
     if (n == 1){
         page1.style.display = "flex";
-        circle.style.backgroundColor = "#D0A85C";
     } else if (n == 2) {
         page2.style.display = "flex";
-        circle.style.backgroundColor = "#C4C4C4"
     } else {
         page3.style.display = "flex";
     }
 }
 
-
+function check(){
+    if (minutes == 0 && seconds == 0){
+        pag(2);
+        alert("Please select a valid time.")
+    } else {
+        play()
+    }
+}
 function play() {
     running = true;
     rotate(playPause);
@@ -47,7 +54,10 @@ function play() {
             if ( timeCount <= 0) {
                 timeCount = 0;
                 clearInterval(update);
-                pause()
+                pause();
+                circle.classList.add("ringring");
+                audio.play();
+                playPause.style.display = "none";
             }
         } else {
             clearInterval(update);
@@ -69,6 +79,10 @@ function restart(){
     rotate(restartBtn);
     pause();
     clock();
+    playPause.style.display = "block";
+    circle.classList.remove("ringring");
+    audio.pause();
+    audio.currentTime = 0;
 }
 
 // This makes the countdown work ones the time is given
@@ -91,8 +105,6 @@ function rotate(n){
     n.offsetWidth;
     n.classList.add("rotate");
 }
-
-
 
 
 
