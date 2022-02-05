@@ -6,4 +6,4 @@ The 1 stands for the number of the project, not the month.
 
 # Why a readme in such a small project?
 
-This is to getting used to write some instructions or information necessary... in this case... completely unnecessary.
+This is to getting used to write some instructions or necessary information... in this case... completely unnecessary.
