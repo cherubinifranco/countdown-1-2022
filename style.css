@@ -7,6 +7,7 @@
     --secondarydark: #06121B;
     --accent:#D0A85C;
     --primarygray: #C4C4C4;
+    --secondarygray: #323232;
 }
 *{
     margin: 0;
@@ -15,7 +16,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
 }
 body{
-    background-color: #000913;
+    background-color: var(--secondarydark);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,8 +33,6 @@ li img {
     width: 77px;
     height: 77px;
 }
-
-input[type="time"]::-webkit-calendar-picker-indicator { background: none; display:none; }
 
 
   /*                                     */
@@ -59,16 +58,19 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
 /*                                     */
 .btn {
     font-size: 2em;
-    color: var(--accent);
-    border-radius: 10%;
-    border: none;
-    background-color: var(--primarydark);
-    height: 50px;
-    width: 3em;
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: var(--primarydark);
+    border: 1px solid;
+    height: 1.5em;
+    width: 3.4em;
     vertical-align: middle;
+    font-weight: 600;
 }
 .btn:hover{
-    background-color: var(--secondarydark);
+    background-color: var(--primarydark);
+    color: var(--accent);
+    border: none;
 }
 
 
@@ -91,7 +93,7 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
 /* Page2 */
 .timeSelector {
     border: none;
-    background-color: var(--primarygray);
+    background-color: var(--accent);
     font-size: 7em;
 }
 
@@ -101,7 +103,9 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
     flex-direction: column;
     justify-content: space-around;
 }
-
+.subtitle {
+    color: var(--secondarygray)
+}
 
 #remainingTime{
     color: var(--primarydark);
